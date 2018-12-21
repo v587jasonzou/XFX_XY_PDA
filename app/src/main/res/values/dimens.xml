@@ -1,0 +1,33 @@
+<resources>
+    <!-- 字体大小 -->
+    <dimen name="main_text_size">16sp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+
+    <dimen name="text_dimen_size10">10sp</dimen>
+    <dimen name="text_dimen_size11">11sp</dimen>
+    <dimen name="text_dimen_size12">12sp</dimen>
+    <dimen name="text_dimen_size13">13sp</dimen>
+    <dimen name="text_dimen_size14">14sp</dimen>
+    <dimen name="text_dimen_size15">15sp</dimen>
+    <dimen name="text_dimen_size16">16sp</dimen>
+    <dimen name="text_dimen_size17">17sp</dimen>
+    <dimen name="text_dimen_size18">18sp</dimen>
+    <dimen name="text_dimen_size19">19sp</dimen>
+    <dimen name="text_dimen_size20">20sp</dimen>
+    <dimen name="text_dimen_size21">21sp</dimen>
+    <dimen name="text_dimen_size22">22sp</dimen>
+    <dimen name="text_dimen_size23">23sp</dimen>
+    <dimen name="text_dimen_size24">24sp</dimen>
+    <dimen name="text_dimen_size25">25sp</dimen>
+    <dimen name="text_dimen_size26">26sp</dimen>
+    <dimen name="text_dimen_size27">27sp</dimen>
+    <dimen name="text_dimen_size28">28sp</dimen>
+    <dimen name="text_dimen_size29">29sp</dimen>
+    <dimen name="text_dimen_size30">30sp</dimen>
+    <dimen name="text_dimen_size31">31sp</dimen>
+    <dimen name="text_dimen_size32">32sp</dimen>
+    <dimen name="text_dimen_size33">33sp</dimen>
+    <dimen name="text_dimen_size34">34sp</dimen>
+    <dimen name="text_dimen_size35">35sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

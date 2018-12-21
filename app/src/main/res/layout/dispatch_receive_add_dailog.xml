@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_gravity="center"
+    android:background="@drawable/blue_line_white_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bar_bg">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="请选择接车类型"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dimen_size18"></TextView>
+
+        <ImageButton
+            android:id="@+id/dispatch_receive_add_dailog_close"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/round_fork" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/border_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dispatch_receive_add_plan_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            style="@style/button_style"
+            android:text="计划内"
+            android:textSize="@dimen/text_dimen_size18"/>
+        <Button
+            android:id="@+id/dispatch_receive_add_temporary_btn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            style="@style/button_style"
+            android:text="计划外"
+            android:textSize="@dimen/text_dimen_size18"/>
+    </LinearLayout>
+
+</LinearLayout>

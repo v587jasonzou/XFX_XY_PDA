@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="180dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/special_approval_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="审批结果"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dimen_size17"></TextView>
+
+    <EditText
+        android:id="@+id/special_approval_dialog_result"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/editext_bg"
+        android:gravity="top"
+        android:hint="请输入审批意见"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bar_bg"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/special_approval_dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bar_bg"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dimen_size17" />
+
+        <Button
+            android:id="@+id/special_approval_dialog_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@color/bar_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dimen_size17" />
+    </LinearLayout>
+</LinearLayout>

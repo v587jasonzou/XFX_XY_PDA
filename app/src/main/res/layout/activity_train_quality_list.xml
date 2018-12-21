@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/menu_tp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_bg"
+        app:title="保存复检提票"
+        app:navigationIcon="@mipmap/back_arrow_white"
+        app:titleTextColor="@color/white"
+        android:gravity="center_vertical"
+        android:theme="@style/AppTheme.ActionBar"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/srlRefresh">
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lvRecheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

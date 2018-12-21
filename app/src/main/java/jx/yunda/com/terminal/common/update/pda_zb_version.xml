@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update>
+	<versionCode>01</versionCode>
+	<appName>jx.apk</appName>
+	<url>http://192.168.1.201:8080/jczb/pdaAppUpdate/zbm.apk</url>
+</update>

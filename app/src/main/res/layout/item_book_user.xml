@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <jx.yunda.com.terminal.widget.MyBookView
+            android:id="@+id/bkInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/gray"/>
+
+        <jx.yunda.com.terminal.widget.SelectUserTextView
+            android:id="@+id/tvPlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:text="hahhaha"
+            android:drawableRight="@mipmap/point_icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="27dp"
+            android:paddingBottom="27dp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"/>
+</LinearLayout>

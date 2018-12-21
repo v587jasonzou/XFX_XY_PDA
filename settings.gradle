@@ -1,0 +1,2 @@
+include ':app', ':rxretrofitlibrary'
+project(':rxretrofitlibrary').projectDir = new File('rxretrofitlibrary')

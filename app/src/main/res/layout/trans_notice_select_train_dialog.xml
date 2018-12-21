@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:text="在修机车"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dimen_size17"></TextView>
+    <EditText
+        android:id="@+id/trans_notice_select_train_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/editext_bg"
+        android:drawableLeft="@mipmap/search_black"
+        android:hint="请输入车号"
+        android:padding="5dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trans_notice_select_train_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/border_top_bottom"
+        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="已选择车辆:"
+            android:textSize="@dimen/text_dimen_size13" />
+
+        <TextView
+            android:id="@+id/trans_notice_select_train_persons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="reee"
+            android:textSize="@dimen/text_dimen_size13" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/bar_bg"
+        android:gravity="center_vertical"
+        android:minHeight="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/trans_notice_select_train_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bar_bg"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dimen_size17" />
+
+        <Button
+            android:id="@+id/trans_notice_select_train_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@color/bar_bg"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_dimen_size17" />
+    </LinearLayout>
+</LinearLayout>

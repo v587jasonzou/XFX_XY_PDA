@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flcontent">
+        <LinearLayout
+            android:id="@+id/menu_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/text_selector"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/menu_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription=""
+                android:scaleType="fitCenter"
+                android:src="@mipmap/tp_process" />
+
+            <TextView
+                android:id="@+id/menu_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@color/main_text_color"
+                android:textSize="@dimen/text_dimen_size14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/job_count"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_above="@id/menu_item"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/circle_red_bg"
+            android:gravity="center"
+            android:text="123"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/tvUndoNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/circle_red_icon"
+            android:textSize="10sp"
+            android:text="99+"
+            android:padding="3dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"/>
+    </FrameLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:id="@+id/llContent"
+      android:visibility="gone">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textSize="18sp"
+          android:padding="10dp"
+          android:id="@+id/tvTitle"/>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1px"
+          android:background="@color/gray"/>
+  </LinearLayout>
+
+</LinearLayout>

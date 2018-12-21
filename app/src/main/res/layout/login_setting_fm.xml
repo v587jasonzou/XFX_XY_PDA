@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/container_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/login_set_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimaryDark"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <Button
+                android:id="@+id/login_setting_back"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="left"
+                android:background="@mipmap/left_arrows_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/sys_setting"
+                android:textColor="@color/white"
+                android:textSize="22dp" />
+        </android.support.v7.widget.Toolbar>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="配置服务端地址"
+            android:textSize="28dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="业务服务器地址设置"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参考格式：192.168.1.108:8080/CoreFrame"
+            android:textColor="@color/black_overlay" />
+
+        <jx.yunda.com.terminal.widget.EditTextByOneKey
+            android:id="@+id/login_setting_baseurl"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入服务器地址"
+            android:text=""
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="消息服务器地址设置"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参考格式：192.168.1.108:8080/CoreFrame"
+            android:textColor="@color/black_overlay" />
+
+        <jx.yunda.com.terminal.widget.EditTextByOneKey
+            android:id="@+id/login_setting_msg_web_url"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="请输入服务器地址"
+            android:text=""
+            android:textSize="18dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="消息WebSocket地址设置"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="参考格式：192.168.1.108:8080"
+            android:textColor="@color/black_overlay" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <jx.yunda.com.terminal.widget.EditTextByOneKey
+                android:id="@+id/login_setting_msg_socket_address"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="4"
+                android:hint="请输入IP地址"
+                android:text=""
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text=":"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_dimen_size20" />
+
+            <jx.yunda.com.terminal.widget.EditTextByOneKey
+                android:id="@+id/login_setting_msg_socket_port"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="2"
+                android:hint="端口号"
+                android:text=""
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_setting_save_btn"
+            style="@style/button_style"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="45dp"
+            android:text="保 存"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

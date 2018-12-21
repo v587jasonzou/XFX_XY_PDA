@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="HXD3 0095"
+        android:background="@drawable/editext_bg"
+        android:textSize="17sp"
+        android:singleLine="true"
+        android:textColor="#2c2c2c"
+        android:padding="10dp"
+        android:layout_margin="5dp"/>
+
+    <ImageView
+        android:id="@+id/tv_redDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:paddingTop="3dp"
+        android:paddingRight="5dp"
+        android:src="@mipmap/qi_icon"
+        />
+
+</FrameLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/message_other_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/message_other_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="0dp"
+            android:text="孙小红【总装组】"
+            android:textSize="@dimen/text_dimen_size16" />
+
+        <TextView
+            android:id="@+id/message_other_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/message_other_info"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/message_other_from"
+            android:text="14:20"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_dimen_size12" />
+
+        <TextView
+            android:id="@+id/message_other_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_other_from"
+            android:background="@drawable/message_left_gray"
+            android:gravity="center_vertical"
+            android:text="asdasdasda" />
+
+        <TextView
+            android:id="@+id/message_other_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_other_info"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/text_label"
+            android:text="张三已读，王二已读，张三已读，王二已读，张三已读，王二已读，张三已读，王二已读，张三已读，王二已读，张三已读，王二已读，"
+            android:textSize="@dimen/text_dimen_size10" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/message_my_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/message_my_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/message_my_time"
+            android:text="孙小红【总装组】"
+            android:textSize="@dimen/text_dimen_size16" />
+
+        <TextView
+            android:id="@+id/message_my_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/message_my_info"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dp"
+            android:text="14:20"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_dimen_size12" />
+
+        <TextView
+            android:id="@+id/message_my_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/message_my_from"
+            android:background="@drawable/message_right_gray"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="30dp"
+            android:paddingTop="10dp"
+            android:text="asdasdasd"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/message_my_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/message_my_info"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/text_label"
+            android:text="已读：张三"
+            android:textSize="@dimen/text_dimen_size10" />
+    </RelativeLayout>
+</LinearLayout>

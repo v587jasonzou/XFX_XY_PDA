@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvBackGroup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="退回到调度"
+        android:gravity="center" />
+    <View
+        android:layout_width="200dp"
+        android:layout_height="1px"
+        android:background="@color/gray_light"/>
+    <TextView
+        android:id="@+id/tvBackPerson"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="退回到班组"
+        android:gravity="center" />
+</LinearLayout>

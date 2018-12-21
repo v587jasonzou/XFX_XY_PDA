@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/jc_apply_process_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/container_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/jc_apply_process_node_name"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/editext_bg_green"
+        android:gravity="center"
+        android:minHeight="70dp"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_dimen_size18" />
+
+    <TextView
+        android:id="@+id/jc_apply_process_persons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@id/jc_apply_process_node_name"
+        android:text=""
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_dimen_size12"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp"
+        android:layout_below="@id/jc_apply_process_persons"
+        android:layout_toRightOf="@id/jc_apply_process_node_name"
+        android:background="@drawable/message_left_gray"
+        android:orientation="vertical"
+        android:paddingBottom="4dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/jc_apply_process_approval_content"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="left"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/icon_gray"
+            android:textSize="@dimen/text_dimen_size16" />
+
+        <TextView
+            android:id="@+id/jc_apply_process_approver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text=""
+            android:textColor="@color/icon_gray"
+            android:textSize="@dimen/text_dimen_size14" />
+
+        <TextView
+            android:id="@+id/jc_apply_process_approval_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text=""
+            android:textColor="@color/icon_gray"
+            android:textSize="@dimen/text_dimen_size12" />
+    </LinearLayout>
+
+
+</RelativeLayout>

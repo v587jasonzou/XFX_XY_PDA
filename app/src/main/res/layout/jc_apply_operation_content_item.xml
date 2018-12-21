@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="3dp"
+    android:background="@drawable/border_bottom"
+    android:minHeight="50dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/jc_apply_operation_content_item_num"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="20"
+        android:textSize="@dimen/text_dimen_size18" />
+
+    <TextView
+        android:id="@+id/jc_apply_operation_content_item_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="测试"
+        android:textSize="@dimen/text_dimen_size18" />
+
+    <Button
+        android:id="@+id/jc_apply_operation_content_item_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/submit_bg"
+        android:text="退回" />
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/menu_tp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/bar_bg"
+        app:title="保存复检提票"
+        app:navigationIcon="@mipmap/back_arrow_white"
+        app:titleTextColor="@color/white"
+        android:gravity="center_vertical"
+        android:theme="@style/AppTheme.ActionBar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTicketName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HXT4 5100"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="复检提票"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvTicketNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前提票数 0张"
+        android:textColor="@color/text_color"
+        android:layout_margin="10dp"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/srlRefresh">
+        <com.baoyz.swipemenulistview.SwipeMenuListView
+            android:id="@+id/lvRecheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加提票"
+        android:background="@drawable/button_selector"
+        android:layout_gravity="right"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="19sp"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp" />
+</LinearLayout>

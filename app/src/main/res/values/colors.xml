@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#00c853</color>
+    <color name="gray">#8b8787</color>
+    <color name="black">#000000</color>
+    <color name="container_bg">#F0F0F0</color><!-- 容器背景颜色 -->
+    <color name="white">#ffffff</color>
+    <color name="black_overlay">#858585</color>
+    <color name="gray_light">#e4e2e2</color>
+    <color name="border_color">#DEDEDE</color>
+    <color name="acivity_color">#3D5AFE</color>
+    <color name="main_text_color">#858585</color>
+    <color name="textviewBg">#3D5AFE</color>
+    <color name="title_blue">#3D5AFE</color>
+    <color name="bar_bg">#303f9f</color>
+    <color name="slideBg">#EEEEEE</color>
+    <color name="tickettextcolor">#2C2C2C</color>
+    <color name="tickettypetextcolor">#626262</color>
+    <color name="base_bg">#ffF0F0F0</color>
+    <color name="icon_yellow">#f57f17</color>
+    <color name="icon_green">#00c853</color>
+    <color name="icon_gray">#757575</color>
+    <color name="up_equip_text">#FF5050</color>
+    <color name="gray_bg">#F5F5F5</color>
+    <color name="text_color">#212121</color>
+    <color name="tab_click">#253FD4</color>
+    <color name="tab_unclick">#3E5FE5</color>
+    <color name="light_green_bg">#f0fcf5</color>
+    <color name="text_label">#CFD6E5</color>
+    <color name="btn_remove">#FF2626</color>
+    <color name="msg_group_type">#00BFA5</color>
+    <color name="colorPrimaryLight">#cc0a56d0</color>
+</resources>

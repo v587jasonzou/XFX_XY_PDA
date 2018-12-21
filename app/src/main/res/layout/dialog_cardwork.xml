@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/delete_icon" />
+    <TextView
+        android:id="@+id/tvEquipName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择作业顺序"
+        android:layout_marginTop="20dp"
+        android:textSize="@dimen/text_dimen_size27"
+        android:textColor="@color/black"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lvEquip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
